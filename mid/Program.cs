@@ -36,7 +36,7 @@
     // Sell an item
     public void SellItem(int quantitySold)
     {
-        // TODO: Decrease the item's stock quantity by the quantity sold.
+       
         // Make sure the stock doesn't go negative.
 
         if (quantitySold <= QuantityInStock)
@@ -94,11 +94,11 @@ class Program
             Console.WriteLine("3. Restock an item and print the updated details.");
             Console.WriteLine("4. Check if an item is in stock and print a message accordingly.");
             Console.WriteLine("5. Exit");
-            Console.Write("Enter your choice (1-5): ");
+            Console.Write("Enter your data (1-5): ");
 
-            if (int.TryParse(Console.ReadLine(), out int choice))
+            if (int.TryParse(Console.ReadLine(), out int data))
             {
-                switch (choice)
+                switch (data)
                 {
                     case 1:
                         Console.WriteLine("\nDetails of all items:");
